@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Categories - Bazar man</title>
+    <style>
+        .hero {
+            background-color: #F4F7FD;
+
+        }
+
+        .hero-title {
+            margin-left: 155px;
+            margin-right: 150px;
+        }
+        .hero-2{
+            margin-right:150px;
+        }
+
+        .hero-sub {
+            font-size: 50px;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+
+        .main-row {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .hero-img {
+            margin-right: 150px;
+        }
+
+        .cate-first {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        footer{
+          background-color:#1A2334;
+          font-family:'Inter', sans-serif;
+        }
+        .footer-first{
+            margin-left:150px;
+            margin-right: 150px;
+        }
+        .footer-title{
+            font-size:20px;
+            
+        }
+         .footer-title~div{
+            font-size:15px;
+            color:#D1D5DB;
+            padding-top:3px;
+            padding-bottom:3px;
+        }
+        .email{
+            font-size:13px;
+        }
+        .footer-sec{
+            margin-left:150px;
+            margin-right:150px;
+            color:#9CA3AF;
+        }
+        .fa-screwdriver-wrench{
+           color: #7B3FE4;
+        }
+        .cate-icon{     
+            background-color: #EDE4FF;
+        }
+        .bi-stars{
+        
+          color: #FFD54F;  
+        }
+        .cate-star{
+             background-color: #FFF8E1; /* زرد خیلی روشن مایل به سفید */
+        }
+        .fa-couch{
+             color: #7B3FE4;
+        }
+        .cate-couch{
+             background-color: #EDE4FF;
+        }
+        .bi-controller{
+             color: #E53935;
+
+        }
+        .cate-controll{
+            background-color: #FDE0E0
+        }
+        .fa-dumbbell{
+           color: #43A047;
+        }
+        .cate-dumb{
+             background-color: #E8F5E9;
+        }
+        .fa-paw{
+            color: #FB8C00;
+        }
+        .cate-pet{
+            background-color: #FFF3E0;
+        }
+        .fa-music{
+            color: #8E24AA;
+        }
+        .cate-mus{
+             background-color: #F3E5F5;
+        }
+        .fa-house-chimney{
+              color: #1976D2;
+        }
+        .cate-house{
+            background-color: #E3F2FD;
+        }
+        .fa-book{
+            color: #1565C0;
+        }
+        .cate-book{
+            background-color: #E8EAF6;
+        }
+        .fa-basketball{
+            color: #F57C00;
+        }
+        .cate-bas{
+            background-color: #FFF3E0;
+        }
+        .fa-briefcase{
+            color: #43A047;
+        }
+        .cate-bre{
+            background-color: #E8F5E9;
+        }
+        .fa-shirt {
+           color: #E53935;
+        }
+        .cate-shirt{
+           background-color: #FDE0E0
+        }
+       
+ 
+    </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<body class="container-fluid p-0">
+    <header>
+        <nav class="d-flex justify-content-around border-bottom p-3 bg-white align-items-center">
+            <div>
+                <a href="bazar.html" class="text-decoration-none">
+                    <span class="bi bi-bag-check-fill text-primary fs-3  "></span>
+                    <span class="text-primary fs-3 fw-semibold ms-3">Bazar man</span>
+                </a>
+            </div>
+            <div class="input-group  w-25 ms-5 ">
+                <input type="text" class="form-control" placeholder="Search for product, Categories, or location">
+                <button class="btn btn-light dropdown-toggle" type="submit" data-bs-toggle="dropdown">All
+                    Categories</button>
+                <ul class="dropdown dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> All Categories</a></li>
+                    <li><a class="dropdown-item" href="#"> Electronics </a></li>
+                    <li><a class="dropdown-item" href="#"> Vehicles</a></li>
+                    <li><a class="dropdown-item" href="#"> Property</a></li>
+                    <li><a class="dropdown-item" href="#"> Fashion</a></li>
+                    <li><a class="dropdown-item" href="#"> Home & Living</a></li>
+                    <li><a class="dropdown-item" href="#"> Books </a></li>
+                    <li><a class="dropdown-item" href="#"> Soprts </a></li>
+
+                </ul>
+                <span class="bi bi-search btn btn-primary "><span class="ms-1">Search</span></span>
+            </div>
+            <div>
+                <a href="bazar.html" class="text-decoration-none text-dark fw-bold me-2">
+                    Home
+                </a>
+                <a href="bazar.html" class="text-decoration-none text-dark fw-bold mx-2">
+                    How it Works
+                </a>
+
+
+                <a href="login.html" class="text-decoration-none text-dark fw-bold  mx-2">
+                    Login
+                </a>
+
+
+                <a href="register.html" class="text-decoration-none btn btn-primary text-white ">
+                    Register
+                </a>
+            </div>
+        </nav>
+        <div class="hero w-100  d-flex justify-content-between align-items-center" style="height:300px; height:280px;">
+            <div class="hero-title">
+                <button class="btn btn-outline-primary roudned rounded-5 mb-3">Categories</button>
+                <h1 class="hero-sub">All <span class="text-primary">Categories</span></h1>
+                <p class="text-muted fs-5">Browse Through all available categories and find <br> exactly what you're
+                    looking for</p>
+            </div>
+            <div class="hero-2">
+               <img src="./images/cate-2.jpeg" style="width:400px; height:250px;">
+            </div>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="d-flex justify-content-between cate-first pt-5">
+
+                <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="d-flex justify-content-center align-items-center rounded rounded-circle bg-primary-subtle  me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="bi bi-laptop text-primary fs-1"></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Electronics
+                        </div>
+                        <div class="text-muted mt-1">
+                            250+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                <a href="#"
+                    class=" text-decoration-none text-dark d-flex align-items-center border rounded rounded-3 p-3 "
+                    style="width:340px; height:90px;">
+                    <div class=" d-flex justify-content-center align-items-center bg-danger-subtle rounded rounded-circle me-3"
+                        style="width:70px; height:70px;">
+                        <span class="bi bi-car-front fs-1 text-danger"></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Vehicles
+                        </div>
+                        <div class="text-muted mt-1">
+                            180+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right text-secondary"></span>
+                </a>
+
+                <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 p-3 "
+                    style="width:340px; height:90px;">
+                    <div class="d-flex justify-content-center align-items-center  rounded rounded-circle bg-danger-subtle me-3"
+                        style="width:70px; height:70px;">
+                        <span class="bi bi-house-door-fill text-danger fs-1 "></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Property
+                        </div>
+                        <div class="text-muted mt-1">
+                            120+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center border rounded rounded-3 p-3" style="width:340px; height:90px;">
+                    <div class=" cate-shirt d-flex justify-content-center align-items-center  rounded rounded-circle me-3 " style="width:70px; height:70px;">
+                        <span class=" fs-1 "><i class="fa-solid fa-shirt "></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Fshion
+                        </div>
+                        <div>
+                            180+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right text-secondary"></span>
+                </a>
+            </div>
+            
+            <div class="cate-first pt-4 d-flex justify-content-between">
+             <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-house d-flex justify-content-center align-items-center rounded rounded-circle  me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="bi fs-1"><i class="fa-solid fa-house-chimney"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Home & Living 
+                        </div>
+                        <div class="text-muted mt-1">
+                            80+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class=" cate-book d-flex justify-content-center align-items-center rounded rounded-circle  me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="fs-1 "><i class="fa-solid fa-book"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Books
+                        </div>
+                        <div class="text-muted mt-1">
+                            650+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-bas d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="fs-1 "><i class="fa-solid fa-basketball"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Soprts
+                        </div>
+                        <div class="text-muted mt-1">
+                            310+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-bre d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class=" fs-1 "><i class="fa-solid fa-briefcase"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Jobs
+                        </div>
+                        <div class="text-muted mt-1">
+                            50+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+            </div>
+
+            <div class="cate-first pt-4 d-flex justify-content-between">
+             <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class=" cate-icon d-flex justify-content-center align-items-center rounded rounded-circle    me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="fs-2 "><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Services
+                        </div>
+                        <div class="text-muted mt-1">
+                            180+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-star d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="bi bi-stars  fs-1"></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Beauty
+                        </div>
+                        <div class="text-muted mt-1">
+                            650+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="d-flex justify-content-center align-items-center rounded rounded-circle bg-primary-subtle  me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="fs-1 text-primary-emphasis "><i class="fa-solid fa-mobile-screen"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Mobile Phones
+                        </div>
+                        <div class="text-muted mt-1">
+                            210+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-couch d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class=" fs-1 "> <i class="fa-solid fa-couch"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Jobs
+                        </div>
+                        <div class="text-muted mt-1">
+                            50+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+            </div>
+
+            <div class="cate-first pt-4 d-flex justify-content-between">
+             <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class=" cate-controll d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="bi bi-controller  fs-1"></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Toys & Games
+                        </div>
+                        <div class="text-muted mt-1">
+                            130+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class=" cate-dumb d-flex justify-content-center align-items-center rounded rounded-circle  me-3 "
+                        style="width:70px; height:70px;">
+                        <span class=" fs-1"><i class="fa-solid fa-dumbbell"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Health & Fitness
+                        </div>
+                        <div class="text-muted mt-1">
+                            650+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class="cate-pet d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class="fs-1  "><i class="fa-solid fa-paw"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Pet Suplied
+                        </div>
+                        <div class="text-muted mt-1">
+                            310+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+                 <a href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center border roudned rounded-3 bg-white p-3"
+                    style="width:340px; height:90px;">
+                    <div class=" cate-mus d-flex justify-content-center align-items-center rounded rounded-circle   me-3 "
+                        style="width:70px; height:70px;">
+                        <span class=" fs-1 "> <i class="fa-solid fa-music"></i></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-semibold">
+                            Music & Instrument
+                        </div>
+                        <div class="text-muted mt-1">
+                            50+ products
+                        </div>
+                    </div>
+                    <span class="bi bi-arrow-right "></span>
+                </a>
+
+            </div>
+            <p class="text-center pt-3 pb-3"><a href="#" class=" text-decoration-none text-secondary">Showing all Categories(16)</a> </p>
+
+
+        </main>
+    </section>
+    <footer class="  text-white" style="width:100%; height:315px; ">
+        <div class="row footer-first pt-5 border-bottom border-bottom-3 border-secondary pb-3">
+             <div class="col  border-end border-secondary">
+                     <h4 class="footer-title fs-4 fw-bold pb-1"><span class="bi bi-bag-check-fill fs-3 text-primary"></span> Bazar Man</h4>
+                    <div>Buy and Sell Everything Easily</div>
+                    <div class="my-1">Find Great Product or Sell</div>
+                    <div>What you no longer need</div>
+                    <div class="pt-3">
+                        <span class="bi bi-facebook text-primary fs-4"></span>
+                        <span class="bi bi-instagram text-danger fs-4 mx-2"></span>
+                        <span class="bi bi-twitter text-info fs-4" ></span>
+                        <span class="bi bi-youtube text-danger fs-4 mx-2"></span>
+                    </div>
+                </div>
+                <div class="col border-end border-secondary ps-4">
+                     <div class="footer-title pb-2">Marketplace</div>
+                     <div><a href="#" class="text-decoration-none text-white">All Products</a> </div>
+                     <div><a href="categories.html"  class="text-decoration-none text-white">Catagories</a> </div>
+                     <div ><a href=""  class="text-decoration-none text-white">Featured</a> </div>
+                     <div> <a href="#"  class="text-decoration-none text-white">Recent</a> </div>
+                </div>
+                <div class="col border-end border-secondary ps-4">
+                    <div class="footer-title fw-bold pb-2">Company</div>
+                    <div><a href="#" class="text-decoration-none text-white">About Us</a> </div>
+                    <div><a href="#"  class="text-decoration-none text-white">how it works</a> </div>
+                    <div> <a href="#"  class="text-decoration-none text-white">Blogs</a> </div>
+                    <div> <a href="#"  class="text-decoration-none text-white">Contact Us</a> </div>
+                </div>
+                <div class="col ps-4">
+                    <div class=" footer-title fw-bold pb-2 ">Support</div>
+                   <div><a href="#" class="text-decoration-none text-white">Help Center</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Term of USe</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Privacy  Policy</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Safety Tips</a> </div>
+                </div>
+                <div class="col">
+                    <div class="footer-title fw-bold pb-2 ">Contact</div>
+                   <div> <span class="bi bi-phone"></span> <span class="ms-2"> +93 748150122</span> </div>
+                   <div class="my-2"><span class="bi bi-envelope-at-fill"></span> <span class="ms-2 email"> hassanzadaahmadshah4@gmail.com </span></div>
+                   <div><span class="bi bi-geo-alt-fill"></span> <span class="ms-2"> Mazar-Sharif Afghanistan</span></div>
+                </div>
+        </div>
+        <div class="row footer-sec pt-3 pb-3">
+            <div class="col">
+                 @2026 Bazar man All rights reserved
+            </div>
+            <div class="col">
+                <span class="float-end"> Made With <span class="bi bi-heart-fill text-danger-emphasis"> </span> for Afghanistan</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

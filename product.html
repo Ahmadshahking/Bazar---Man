@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Products - Bazar man</title>
+    <Style>
+        .pro-hero {
+            background-color: #F4F7FD;
+        }
+
+        .pro-hero-title {
+            margin-left: 168px;
+
+        }
+
+        .pro-hero-img {
+            margin-right: 168px;
+        }
+
+        .pro-title {
+            font-size: 50px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pro-search {
+            margin-left: 168px;
+            margin-right: 168px;
+        }
+        .pro-main{
+            margin-left:158px;
+            margin-right:158px;
+        }
+        .bi-grid{
+            background-color: #F8FAFC;
+            border: 1px solid #E5E7EB;
+            width:35px;
+            height:35px;
+        }
+        .bi-justify{
+            background-color: #F8FAFC;
+            border: 1px solid #E5E7EB;
+            width:35px;
+            height:35px;
+        }
+        .pro-card{
+            margin-left:168px;
+            margin-right:168px;
+        }
+         footer{
+          background-color:#1A2334;
+          font-family:'Inter', sans-serif;
+        }
+        .footer-first{
+            margin-left:155px;
+            margin-right: 155px;
+        }
+        .footer-title{
+            font-size:20px;
+            
+        }
+         .footer-title~div{
+            font-size:15px;
+            color:#D1D5DB;
+            padding-top:3px;
+            padding-bottom:3px;
+        }
+        .email{
+            font-size:13px;
+        }
+        .footer-sec{
+            margin-left:150px;
+            margin-right:150px;
+            color:#9CA3AF;
+        }
+    </Style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<body class="container-fluid p-0">
+    <header>
+        <nav class="border border-1  d-flex justify-content-around bg-white align-items-center  p-3">
+            <div><span class="bi bi-bag-check-fill text-primary fs-3 ps-3"> </span>
+                <span class=" fs-3 fw-semibold mx-2 text-primary">Bazar man</span>
+            </div>
+            <div class="input-group  w-25 ms-5">
+                <input type="text" placeholder="Search for product, Categories, or location" class="form-control">
+                <button class="btn btn-light  dropdown-toggle" type="submit" data-bs-toggle="dropdown">All
+                    Categories</button>
+                <ul class="dropdown dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> All Categories</a></li>
+                    <li><a class="dropdown-item" href="#"> Electronics </a></li>
+                    <li><a class="dropdown-item" href="#"> Vehicles</a></li>
+                    <li><a class="dropdown-item" href="#"> Property</a></li>
+                    <li><a class="dropdown-item" href="#"> Fashion</a></li>
+                    <li><a class="dropdown-item" href="#"> Home & Living</a></li>
+                    <li><a class="dropdown-item" href="#"> Books </a></li>
+                    <li><a class="dropdown-item" href="#"> Soprts </a></li>
+                </ul>
+                <button class="btn btn-primary bi bi-search"> <span>Search</span> </button>
+            </div>
+            <div class="">
+                <a href="bazar.html" class="text-decoration-none text-dark fw-bold">Home</a>
+                <a href="#how-it-work" class="text-decoration-none text-dark fw-bold mx-3">How it works</a>
+                <a href="login.html" class="text-decoration-none text-dark fw-bold">Login</a>
+                <a href="register.html" class="btn btn-primary  mx-3 text-decoration-none text-white">Register</a>
+
+            </div>
+        </nav>
+        <div class="pro-hero d-flex justify-content-between" style="width:100%; height:280px;">
+            <div class="pro-hero-title pt-4">
+                <div><span class="bi bi-house-fill text-primary fs-4"></span> <span><a href="bazar.html"
+                            class="text-decoration-none  fs-3">Home</a> </span> <span
+                        class="bi bi-chevron-right fs-5 px-2"></span> <span class="fs-5">All Products</span> </div>
+                <div class="pro-title fw-semibold pt-2">All <span class="text-primary">Products</span></div>
+                <p class="text-muted fs-5">Browse all Products available on Bazar man</p>
+            </div>
+            <div class="pro-hero-img">
+                <img src="./images/cate-1.jpeg" style="width:400px; height:250px;">
+            </div>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div>
+                <div class="pro-search border rounded rounded-3 p-2 shadow-sm border-1 my-3 ">
+                    <div class="row g-3">
+                        <div class="col-lg-5">
+                            <div class="input-group">
+                                <span class="input-group-text border-end-0 bg-white "><span class="bi bi-search"></span>
+                                </span>
+                                <input type="text" class="form-control border-start-0"
+                                    placeholder="Search products, e.g. iPhone, laptop, sofa.">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-select">
+                                <option>All Categoried</option>
+                                <option>Electronics </option>
+                                <option>Vehicles</option>
+                                <option>Property</option>
+                                <option>Fashion</option>
+                                <option>Home & Living</option>
+                                <option> Books </option>
+                                <option> Soprts </option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-select">
+                                <option>All Condations</option>
+                                <option>New</option>
+                                <option>Used</option>
+                                <option>for sale</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                             <button class="btn btn-primary w-100"> <span class="bi bi-search"></span> search </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pro-main row pt-3 pb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-secondary ">
+                          Showing <span class="fw-semibold text-dark">1–12</span>
+                          of <span class="fw-semibold text-dark">86</span> products
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="text-secondary small">Sort by:</span>
+                        <select class="form-select form-select-sm" style="width:150px;">
+                           <option>Newest First</option>
+                           <option>Oldest First</option>
+                           <option>Price: Low to High</option>
+                           <option>Price: High to Low</option>
+                        </select>
+                        <button class="btn btn-primary btn-sm"><span class="bi bi-grid-3x3-gap-fill" ></span></button>
+                        <button class="btn btn-light btn-sm border"><span class="bi bi-list"></span> </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pro-card  d-flex justify-content-between">
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/iphone.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Iphone 15 promax</h6>
+                        <div class="text-primary">45,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> kabul</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-laptop.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Dell XPS 13 laptop</h6>
+                        <div class="text-primary">54,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Mazar-Sharif</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-sofa.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Modern Sofa Set</h6>
+                        <div class="text-primary">23,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Herat</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-headphone.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Sony Wh+ 1000XM4</h6>
+                        <div class="text-primary">1,200 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Jowzjan</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-book.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Book Collection</h6>
+                        <div class="text-primary">1,500 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Samangan</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="pro-card pt-4 d-flex justify-content-between">
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-nike.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Nike Air max 270 </h6>
+                        <div class="text-primary">2,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> kabul</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-mac.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Macbook Air M1</h6>
+                        <div class="text-primary">54,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Kunduz</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-s21.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Modern Sofa Set</h6>
+                        <div class="text-primary">23,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Badakhshan</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-dinng-table.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Sony Wh+ 1000XM4</h6>
+                        <div class="text-primary">6,200 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Logar</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-tennis.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Tennis Stick</h6>
+                        <div class="text-primary">700 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Ningarhar</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="pro-card pt-4 d-flex justify-content-between">
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-bike.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Mountain Bike </h6>
+                        <div class="text-primary">12,000 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Laghman </div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-ball.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Football ball</h6>
+                        <div class="text-primary">300 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Farah </div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-ps-hand.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">PS5 Controller</h6>
+                        <div class="text-primary">2,300 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Mazar-Sharif</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-football-set.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Football kit</h6>
+                        <div class="text-primary">4,500 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Maymana</div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <div class="card border shadow-sm   rounded rounded-2 " style="width:280px; height:305px;">
+                    <div class="card-header p-0">
+                        <img src="./images/pro-earless.jpg" class="card-img-top " style="height:150px;">
+                    </div>
+                    <div class="card-body   rounded-bottom-2 fw-bold">
+                        <h6 class="fw-bold pb-0">Modern wireless earphones</h6>
+                        <div class="text-primary">1,500 AF</div>
+                        <div> <span class="bi bi-geo-alt"></span> Kunar </div>
+                        <div><span class="bi bi-tag"></span> Used</div>
+                        <div>
+                             <a href="#" class="text-decoration-none text-dark"><span>Contact</span></a>
+                            <span class="float-end "><a href="#" class="bi bi-heart  text-dark"></a> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+          <div class="text-center my-3">
+            <div class="btn-group">
+                <button class="btn btn-primary bi bi-chevron-left"></button>
+                <button class="btn btn-primary"> 1  </button>
+                <button class="btn btn-primary"> 2  </button>
+                <button class="btn btn-primary"> 3  </button>
+                <button class="btn btn-primary"> 4  </button>
+                 <button class="btn btn-primary bi bi-chevron-right"></button>
+
+            </div>
+          </div>
+        </main>
+    </section>
+    <footer class="  text-white" style="width:100%; height:315px; ">
+        <div class="row footer-first pt-5 border-bottom border-bottom-3 border-secondary pb-3">
+             <div class="col  border-end border-secondary">
+                     <h4 class="footer-title fs-4 fw-bold pb-1"><span class="bi bi-bag-check-fill fs-3 text-primary"></span> Bazar Man</h4>
+                    <div>Buy and Sell Everything Easily</div>
+                    <div class="my-1">Find Great Product or Sell</div>
+                    <div>What you no longer need</div>
+                    <div class="pt-3">
+                        <span class="bi bi-facebook text-primary fs-4"></span>
+                        <span class="bi bi-instagram text-danger fs-4 mx-2"></span>
+                        <span class="bi bi-twitter text-info fs-4" ></span>
+                        <span class="bi bi-youtube text-danger fs-4 mx-2"></span>
+                    </div>
+                </div>
+                <div class="col border-end border-secondary ps-4">
+                     <div class="footer-title pb-2">Marketplace</div>
+                     <div><a href="#" class="text-decoration-none text-white">All Products</a> </div>
+                     <div><a href="categories.html"  class="text-decoration-none text-white">Catagories</a> </div>
+                     <div ><a href=""  class="text-decoration-none text-white">Featured</a> </div>
+                     <div> <a href="#"  class="text-decoration-none text-white">Recent</a> </div>
+                </div>
+                <div class="col border-end border-secondary ps-4">
+                    <div class="footer-title fw-bold pb-2">Company</div>
+                    <div><a href="#" class="text-decoration-none text-white">About Us</a> </div>
+                    <div><a href="#"  class="text-decoration-none text-white">how it works</a> </div>
+                    <div> <a href="#"  class="text-decoration-none text-white">Blogs</a> </div>
+                    <div> <a href="#"  class="text-decoration-none text-white">Contact Us</a> </div>
+                </div>
+                <div class="col ps-4">
+                    <div class=" footer-title fw-bold pb-2 ">Support</div>
+                   <div><a href="#" class="text-decoration-none text-white">Help Center</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Term of USe</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Privacy  Policy</a> </div>
+                   <div><a href="#" class="text-decoration-none text-white">Safety Tips</a> </div>
+                </div>
+                <div class="col">
+                    <div class="footer-title fw-bold pb-2 ">Contact</div>
+                   <div> <span class="bi bi-phone"></span> <span class="ms-2"> +93 748150122</span> </div>
+                   <div class="my-2"><span class="bi bi-envelope-at-fill"></span> <span class="ms-2 email"> hassanzadaahmadshah4@gmail.com </span></div>
+                   <div><span class="bi bi-geo-alt-fill"></span> <span class="ms-2"> Mazar-Sharif Afghanistan</span></div>
+                </div>
+        </div>
+        <div class="row footer-sec pt-3 pb-3">
+            <div class="col">
+                 @2026 Bazar man All rights reserved
+            </div>
+            <div class="col">
+                <span class="float-end"> Made With <span class="bi bi-heart-fill text-danger-emphasis"> </span> for Afghanistan</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

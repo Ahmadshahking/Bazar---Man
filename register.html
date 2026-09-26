@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Register - Bazar ma</title>
+    <Style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </Style>
+    <script src="./register.js">
+
+    </script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 ">
+        <div class="card shadow-sm border rounded " style="width:500px;">
+            <div class="card-body p-4">
+                <div class="text-center mb-4">
+                    <div class="text-primary">
+                        <span class="fs-3 bi bi-check-circle-fill"></span>
+                        <span class="fs-2 ms-1">Bazar man</span>
+                    </div>
+                </div>    
+                    <h4>Create Account</h4>
+                    <p class="text-muted">
+                        Join Bazar Man and start buying or selling
+                    </p>
+                
+
+                <div class="pb-3">
+                    <label for="name" class="form-label fw-semibold">Full Name</label>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Your Name" id="name">
+                    </div>
+                </div>
+
+                <div class="pb-3 ">
+                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <div>
+                        <input type="email" class="form-control" placeholder="Your Email" id="email">
+                    </div>
+                </div>
+                <div class=" pb-3">
+                    <label for="password" class="form-label fw-semibold">Password</label>
+                    <div>
+                        <input  type="password" class="form-control" placeholder="Enter Password" id="password">
+                    </div>
+                </div>
+                <div clsss="pb-3">
+                    <label for="confirmPassword" class="form-label fw-semibold">Confirm Password</label>
+                    <div>
+                        <input type="password" class="form-control" placeholder="confirm your password" id="confirmPassword">
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <input type="checkbox" class="form-check-input" id="terms"><label for="terms" class="form-label ms-2">I agree to the <a
+                            href="#" class="text-decoration-none text-primary">Term & condations</a> </label>
+                </div>
+               <div class="text-center"> <button type="button" id="registerbtn" class="btn btn-primary w-100 my-3">Creat Account</button></div>
+                <div class="pt-3">
+                    <p class="text-muted">Already have an account? <a href="#login.html" class="text-decoration-none">Log in</a> </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
